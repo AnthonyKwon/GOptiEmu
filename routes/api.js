@@ -41,7 +41,7 @@ function verifyUA(userAgent) {
      * model_name: Model of the device (ex: SM-G930F)
      * al: API level of the device (ex: 23)
      * version_r: Release version of android (ex: 6.0.1)
-     * version_l: Build.VERSION.INCREMENTAL
+     * version_i: Incremental version number (ex: G930FXXU8EUE1)
      * uuid: UUID of the target device
      * 
      * TODO: write description of version_l
