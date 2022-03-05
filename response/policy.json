@@ -1,0 +1,163 @@
+{
+    "dfs": {
+        "state": "inherited",
+        "mode_values": {
+            "unmanaged": 60,
+            "optimized": 60,
+            "power_save": 60,
+            "ultra_power_save": 30
+        }
+    },
+    "aspect_ratio": {
+        "state": "forcibly_enabled"
+    },
+    "black_surface": {
+        "state": "forcibly_disabled"
+    },
+    "governor_settings": {
+        "state": "forcibly_enabled"
+    },
+    "game_performance_siop": {
+        "state": "forcibly_enabled",
+        "cpu": {
+            "default_level": -5
+        },
+        "gpu": {
+            "default_level": -2
+        }
+    },
+    "game_performance_spa": {
+        "state": "forcibly_enabled",
+        "ipm_target_pst_default": "480",
+        "ipm_target_pst_high": "480",
+        "ipm_start_wout_trining": "1",
+        "ipm_allow_during_charging": "1",
+        "ipm_revert_SIOP_if_high": "0",
+        "ipm_revert_SIOP_if_over": "7",
+        "ipm_revert_SIOP_if_less": "-3",
+        "enableCpuMinFreqControl": "0",
+        "ipm_shutdown_freq_missmatch": "0",
+        "use_whitelist": false,
+        "siop_modes": [false, true, true]
+    },
+    "micro_game_bench": {
+        "state": "forcibly_enabled"
+    },
+    "volume_control": {
+        "state": "forcibly_enabled"
+    },
+    "clear_bg_process": {
+        "state": "inherited"
+    },
+    "gfi": {
+        "state": "forcibly_disabled",
+        "dfs_offset": {
+            "enabled": false
+        },
+        "gfps_offset": {
+            "enabled": false
+        }
+    },
+    "resolution": {
+        "state": "inherited",
+        "type": "tss",
+        "mode_values": {
+            "unmanaged": 1440,
+            "optimized": 1080,
+            "power_save": 720,
+            "ultra_power_save": 720
+        }
+    },
+    "selective_target_api": {
+        "state": "forcibly_disabled"
+    },
+    "boost_launch": {
+        "state": "inherited"
+    },
+    "boost_resume": {
+        "state": "inherited"
+    },
+    "boost_touch": {
+        "state": "inherited"
+    },
+    "external_sdk": {
+        "state": "inherited"
+    },
+    "frame_drop_check": {
+        "state": "inherited"
+    },
+    "gallery_cmh_stop": {
+        "state": "inherited"
+    },
+    "game_sdk": {
+        "state": "inherited",
+        "GAMESDKVERSION": -1,
+        "GameSDKMode": -1,
+        "MAX_LRP_TEMP": -1,
+        "STEP1_TEMP_START": -1,
+        "STEP2_TEMP_START": -1,
+        "STEP3_TEMP_START": -1,
+        "STEP1_TEMP_INC": -1,
+        "STEP1_TEMP_DEC": -1,
+        "STEP2_TEMP_INC": -1,
+        "STEP2_TEMP_DEC": -1,
+        "STEP3_TEMP_INC": -1,
+        "STEP3_TEMP_DEC": -1,
+        "STEP1_THRESHHOLD_INC": -1,
+        "STEP1_THRESHHOLD_DEC": -1,
+        "STEP2_THRESHHOLD_INC": -1,
+        "STEP2_THRESHHOLD_DEC": -1,
+        "STEP1_THERMAL_MIN_CPU_LEVEL": -1,
+        "STEP1_THERMAL_MIN_GPU_LEVEL": -1,
+        "STEP2_THERMAL_MIN_CPU_LEVEL": -1,
+        "STEP2_THERMAL_MIN_GPU_LEVEL": -1,
+        "STEP3_THERMAL_MIN_CPU_LEVEL": -1,
+        "STEP3_THERMAL_MIN_GPU_LEVEL": -1,
+        "STEP1_THERMAL_MAX_CPU_LEVEL": -1,
+        "STEP1_THERMAL_MAX_GPU_LEVEL": -1,
+        "STEP2_THERMAL_MAX_CPU_LEVEL": -1,
+        "STEP2_THERMAL_MAX_GPU_LEVEL": -1,
+        "STEP3_THERMAL_MAX_CPU_LEVEL": -1,
+        "STEP3_THERMAL_MAX_GPU_LEVEL": -1,
+        "GameSDKPMMode": -1,
+        "USER_CPU_MIN_PERC": -1,
+        "USER_GPU_MIN_PERC": -1
+    },
+    "limit_bg_network": {
+        "state": "inherited"
+    },
+    "logging_policy": {
+        "state": "inherited"
+    },
+    "multi_resolution": {
+        "state": "inherited"
+    },
+    "network_wifi_qos": {
+        "state": "inherited",
+        "tid": 0
+    },
+    "shift_temperature": {
+        "state": "inherited"
+    },
+    "brightness_control": {
+        "state": "inherited"
+    },
+    "mdnie": {
+        "state": "inherited"
+    },
+    "render_thread_affinity": {
+        "state": "inherited"
+    },
+    "vrr": {
+        "state": "inherited"
+    },
+    "tsp": {
+        "state": "inherited"
+    },
+    "allow_more_heat": {
+        "state": "inherited"
+    },
+    "ringlog": {
+        "state": "inherited"
+    }
+}

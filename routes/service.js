@@ -18,8 +18,7 @@ router.get('/gamemode/v3/packages/', function(req, res, next) {
         const package_names = req.query['package_names']; // ex: package_names=com.samsung.android.game.gos
         if (!type || !device_name || !package_names) throw new Error('Invalid Parameter');
 
-        //TODO: parse headers
-
+        //TODO: replace dummy codes to actual implmention
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ message: "Hello world! You're watching this as the code is incomplete." }));
     } catch(err) {
