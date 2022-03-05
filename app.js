@@ -12,14 +12,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //app.use(serviceRouter);
-app.use(apiRouter);
+app.use('/v4/', apiRouter);
 
-/*
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+  res.status(403);
+  res.send('403 Forbidden');
 });
 
+/*
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

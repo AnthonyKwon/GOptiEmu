@@ -21,7 +21,7 @@ router.get('/gamemode/v3/packages/', function(req, res, next) {
         //TODO: parse headers
 
         res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify({ message: "Hello world!" }));
+        res.end(JSON.stringify({ message: "Hello world! You're watching this as the code is incomplete." }));
     } catch(err) {
         console.error(err.stack);
         showParameterError(res);

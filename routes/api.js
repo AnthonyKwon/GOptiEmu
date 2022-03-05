@@ -1,3 +1,4 @@
+const createError = require('http-errors');
 const express = require('express');
 const router = express.Router();
 
@@ -57,7 +58,7 @@ function verifyUA(userAgent) {
     return; // return nothing when passed
 }
 
-router.get('/v4/devices/:deviceId', function(req, res, next) {
+router.get('/devices/:deviceId', function(req, res, next) {
     try {
         // parse User-Agent which contains information about device
         const deviceId = req.params.deviceId; // codename of the device
@@ -65,16 +66,25 @@ router.get('/v4/devices/:deviceId', function(req, res, next) {
         const result = verifyUA(userAgent); // check if user-agent data is correct
 
         if (result) {
+            // some element in user-agent data is missing, return error
             sendError(res, 400, `Missing 'User-Agent' header parameter: '${result}'`);
             return;
         }
 
+        // return device group base on the request data
+        // TODO: return correct device group instead of returning device id
+        // ex: star_lsi - starlte/starlteks, c1s - c1s
         res.setHeader('Content-Type', 'application/json');
         res.status(200);
         res.end(JSON.stringify({ device_group_name: deviceId }));
     } catch(err) {
         console.error(err.stack);
     }
-  });
+});
+
+// handle 404 error 
+router.use(function(req, res, next) {
+    sendError(res, 404, "No matching handler");
+});
 
 module.exports = router;
